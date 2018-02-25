@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.burak.firstgame.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_below="@+id/timeText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/cat"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:ignore="GridLayout" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="0"
+            app:layout_column="1"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="0"
+            app:layout_column="2"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="1"
+            app:layout_column="0"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="1"
+            app:layout_column="1"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="1"
+            app:layout_column="2"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="2"
+            app:layout_column="0"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="2"
+            app:layout_column="1"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_row="2"
+            app:layout_column="2"
+            android:src="@drawable/cat"
+            tools:ignore="GridLayout"
+            android:onClick="increaseScore"/>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="134dp"
+        android:layout_height="54dp"
+        android:text="Time: 30"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="14dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Score:"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="460dp" />
+
+</RelativeLayout>
